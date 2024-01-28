@@ -1,8 +1,8 @@
 const Home = () => {
   return (
-    <div className="h-[calc(100svh-72px)] flex justify-center items-center">
+    <main className="pt-20">
       Home
-    </div>
+    </main>
   );
 };
 export default Home;

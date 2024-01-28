@@ -1,4 +1,5 @@
 import { createContext } from "react";
+import PropTypes from 'prop-types';
 
 export const ThemeContext = createContext("");
 
@@ -16,5 +17,9 @@ const Theme = ({ children }) => {
     </ThemeContext.Provider>
   );
 };
+
+Theme.propTypes = {
+  children: PropTypes.node.isRequired
+}
 
 export default Theme;

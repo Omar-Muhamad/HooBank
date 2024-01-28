@@ -33,7 +33,7 @@ const ThemeSwitcher = () => {
         }
       >
         {theme === "dark" ? (
-          <IoMoonSharp className="bg-neutral-800" />
+          <IoMoonSharp className="bg-primary" />
         ) : (
           <IoSunny className="bg-white" />
         )}

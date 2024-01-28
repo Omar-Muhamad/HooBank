@@ -1,8 +1,8 @@
 const Clients = () => {
   return (
-    <div className="h-[calc(100svh-72px)] flex justify-center items-center">
+    <main className="pt-20">
       Clients
-    </div>
+    </main>
   );
 };
 export default Clients;
