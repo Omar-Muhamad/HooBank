@@ -16,4 +16,5 @@ const Theme = ({ children }) => {
     </ThemeContext.Provider>
   );
 };
+
 export default Theme;

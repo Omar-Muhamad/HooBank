@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 import ThemeSwitcher from "./ThemeSwitcher";
+import { navLinks } from "../constants";
 
 const Navbar = () => {
-  const navLinks = ["Home", "About", "Contact"];
   return (
     <nav className="px-16 h-[72px] flex justify-between items-center shadow-lg">
       <div className="logo">
@@ -11,11 +11,11 @@ const Navbar = () => {
       <div className="flex gap-10">
         <ul className="nav-links flex gap-4">
           {navLinks.map((link) => (
-            <li key={link}>
-              {link === "Home" ? (
-                <NavLink to="/">{link}</NavLink>
+            <li key={link.id}>
+              {link.title === "Home" ? (
+                <NavLink to="/">{link.title}</NavLink>
               ) : (
-                <NavLink to={link.toLowerCase()}>{link}</NavLink>
+                <NavLink to={link.id}>{link.title}</NavLink>
               )}
             </li>
           ))}

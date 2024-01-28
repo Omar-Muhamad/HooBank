@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { IoMoonSharp, IoSunny } from "react-icons/io5";
-import { ThemeContext } from "./ThemeContext";
+import { ThemeContext } from "../context/ThemeContext";
 
 const toggleStyle =
   "absolute left-1 top-1 dark:bg-neutral-300 bg-neutral-800 w-4 h-4 rounded-full transition";
